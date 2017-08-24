@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <metaname
+    ="x5-orientation" content="portrait">
+    <metaname
+    ="screen-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>良农集学生有机餐</title>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--地址选择-->
+    <link rel="stylesheet" href="css/lArea.css"/>
+    <script type="text/javascript" src="js/lArea.min.js"></script>
+
+    <!--时间选择-->
+    <link rel="stylesheet" href="css/lCalendar.css"/>
+    <script type="text/javascript" src="js/lCalendar.min.js"></script>
+    <script>
+        //			阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        })
+        //		背景高度
+        $(document).ready(function () {
+            var winHeight = $(window).height() - $(".inform-header").height();
+            $(".delivery-title").css({
+                height: winHeight
+            });
+        })
+        window.onresize = function () { //手机屏幕横过来
+
+            $(".delivery-title").css({
+                "height": "auto"
+            });
+
+        }
+
+        //		历史记录
+        $(function () {
+            $(".de-school-aldr").click(function () {
+                $(".de-school-history").show();
+                $(".historyDate").show();
+            });
+            $(".history_finish").click(function () {
+                $(".de-school-history").hide();
+                $(".historyDate").hide();
+            });
+            $(".delivery-title-chose ul li").click(function () {
+                $(this).children().addClass("delivery-on"); //加绿色
+                $(this).siblings().children().removeClass();
+            });
+        })
+
+        //		时间选择
+        $(function () {
+            var calendar = new lCalendar();
+            calendar.init({
+                'trigger': '#demo1',
+                'type': 'date'
+            });
+            var qcalendar = new lCalendar();
+            qcalendar.init({
+                'trigger': '#demo6',
+                'type': 'date'
+            });
+        })
+        //		地址选择
+        $(function () {
+            var area = new lArea();
+            area.init({
+                'trigger': '#demo4',
+                'data': 'js/AreaData.json'
+            });
+            var qrea = new lArea();
+            qrea.init({
+                'trigger': '#demo5',
+                'data': 'js/QreaData.json'
+            });
+        })
+    </script>
+</head>
+
+<body>
+<div class="inform-header">
+
+    <div class="title-personal">配送信息</div>
+    <div class="clear"></div>
+</div>
+
+<div class="delivery-title">
+    <div class="delivery-school">
+        <p>选择您配送的学校：</p>
+        <span class="de-school-aldr">历史记录</span>
+        <div class="clear"></div>
+        <div class="delivery-school-address">
+            <input id="demo4" type="text" name="input_address"/>
+            <i class="iconfont icon-xiala"></i>
+            <input id="demo5" type="text" name="input_address"/>
+            <i class="iconfont icon-xiala"></i>
+        </div>
+    </div>
+
+    <div class="historyDate">
+
+        <!--历史记录-->
+        <div class="de-school-history">
+            <div class="history_btn_box">
+                <div class="history_btn history_finish">关闭</div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="history_box_content">
+                <p>选择您配送的学校</p>
+                <p>选择您配送的学校</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="delivery-title-lik botto">
+        <p>编辑宝贝信息：</p>
+
+        <div class="clear"></div>
+    </div>
+    <div class="delivery-title-lik">
+        <p>宝贝姓名</p>
+        <span><input id="demo3" type="text" name="input_name"/></span>
+        <div class="clear"></div>
+    </div>
+
+    <div class="delivery-title-lik">
+        <p>联系方式</p>
+        <span><input id="demo2" type="number" name="input_number"/></span>
+        <div class="clear"></div>
+    </div>
+    <div class="delivery-title-lik">
+        <p>宝贝生日</p>
+        <span>
+					 <input id="demo1" type="text" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
+                            value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
+					<i class="iconfont icon-xiala"></i></span>
+        <div class="clear"></div>
+    </div>
+    <div class="delivery-title-lik">
+        <p>配送日期</p>
+        <span>
+					 <input id="demo6" type="text" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
+                            value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
+					<i class="iconfont icon-xiala"></i></span>
+        <div class="clear"></div>
+    </div>
+    <div class="delivery-title-lik bot-delivery">
+        <p>学校地址</p>
+        <span>沈河区 大南街 64号</span>
+        <div class="clear"></div>
+    </div>
+    <div class="delivery-title-time">
+        <p>配送时间</p>
+    </div>
+    <div class="delivery-title-chose">
+        <ul>
+            <li>
+                <p class="delivery-on">早餐</p>
+            </li>
+            <li>
+                <p>午餐</p>
+            </li>
+            <li>
+                <p>晚餐</p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="delivery-gochose">去选餐</div>
+</div>
+
+<footer>
+    <div class="footer-4">
+        <a href="###"><i class="iconfont icon-zhuye"></i>
+            <p>主页</p>
+        </a>
+    </div>
+    <div class="footer-4">
+        <a href="###" class="on"><i class="iconfont icon-gouwuche"></i>
+            <p>点餐</p>
+        </a>
+    </div>
+    <div class="footer-4">
+        <a href="###"><i class="iconfont icon-dingdan"></i>
+            <p>订单</p>
+        </a>
+    </div>
+    <div class="footer-4">
+        <a href="###"><i class="iconfont icon-xinxingxian"></i>
+            <p>个人</p>
+        </a>
+    </div>
+</footer>
+</body>
+
+</html>

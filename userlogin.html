@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <metaname
+    ="x5-orientation"content="portrait">
+    <metaname
+    ="screen-orientation"content="portrait">
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>良农集学生有机餐</title>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script>
+        //			阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        })
+        //		背景高度
+        $(document).ready(function () {
+            var winHeight = $(window).height() - $(".inform-header").height();
+            $(".userlogin-content").css({height: winHeight});
+        })
+        window.onresize = function () {    //手机屏幕横过来
+
+            $(".userlogin-content").css({"height": "auto"});
+
+        }
+    </script>
+</head>
+<body>
+<div class="inform-header">
+
+    <div class="title-personal">登&nbsp;&nbsp;录</div>
+    <div class="clear"></div>
+</div>
+<div class="userlogin-content">
+    <div class="userlogin-content-logo">
+        <img src="img/logo.png"/>
+    </div>
+    <form class="form-horizontal">
+
+        <div class="form-group">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="登录账号">
+            <i class="iconfont icon-denglu"></i>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="登录密码">
+            <i class="iconfont icon-denglumima"></i>
+            <a href="" class="iconfont icon-dengluyeyanjing fa-question-circle"></a>
+        </div>
+
+    </form>
+    <div class="userlogin-content-sign">
+        <p>注册</p>
+        <span>密码找回</span>
+        <div class="clear"></div>
+    </div>
+    <div class="userlogin-content-denglu">
+        <p>登录</p>
+    </div>
+</div>
+
+</body>
+</html>

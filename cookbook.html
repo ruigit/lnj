@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <metaname
+    ="x5-orientation" content="portrait">
+    <metaname
+    ="screen-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>良农集学生有机餐</title>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <!--轮播图-->
+    <script type="text/javascript" src="js/yxMobileSlider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".slider").yxMobileSlider({
+                during: 5000, //间隔时间
+                speed: 30 //滑动速度
+            })
+        })
+    </script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script>
+        //			阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        })
+    </script>
+    <script>
+        $(function () {
+            $(".section-2").click(function () {
+                $(this).children().eq(0).toggleClass("on-icon-2");
+                $(this).siblings().children().eq(0).toggleClass("on-icon-2");
+                if ($(".icon-if").hasClass("on-icon-2")) {
+                    $(".lnj-recommend").show();
+                    $(".lnj-optional").hide()
+                }
+                if ($(".icon-el").hasClass("on-icon-2")) {
+                    $(".lnj-optional").show();
+                    $(".lnj-recommend").hide()
+                }
+            });
+            $(".lnj-optional-top ul li").not(".optional-top-false").click(function () {
+
+                $(this).siblings().not(".optional-top-false").removeClass();
+
+                $(this).addClass("optional-top-on");//加绿色
+                //$(this).siblings().removeClass();
+            });
+//						$(".lnj-optional-top ul li").click(function() {
+//							$(this).addClass("optional-top-on"); //加绿色
+//							$(this).siblings().removeClass();
+//						});
+            $(".lnj-optional-main-left dl dt").click(function () {
+                $(this).addClass("lnj-optional-main-left-on"); //加绿色
+                $(this).siblings().removeClass();
+            });
+            $(".groom-chose").click(function () {
+                $(this).toggleClass("chose-on");
+            });
+        });
+        //					$(function() {
+        //						//数据加载时的加载图,用于提示用户数据正在加载!
+        //						var loadDiv = '<div class="loading"></div>';
+        //						//监听窗口的鼠标滚轮事件
+        //						$(window).scroll(function() {
+        //							//当滚轮滚动到文档最末位，也就是拉到了最底下
+        //							if($(window).scrollTop() == $(document).height() - $(window).height()) {
+        //
+        //								//发送ajax请求获取数据
+        //								$.ajax({
+        //									type: 'get',
+        //									url: '',
+        //									data: data,
+        //									dataType: 'json',
+        //									//数据加载前调用的方法 beforeSend()
+        //									beforeSend: function(data) {
+        //										//这里判断，如果没有加载数据，会显示loading
+        //										if(data.readyState == 0) {
+        //											//避免多次滚轮触发事件造成图片的多次追加，加上此判断
+        //											if($('.lnj-recommend .loading').length == 0) {
+        //												//将loading插入到内部的内容最末位
+        //												$('.lnj-recommend').append(loadDiv);
+        //											}
+        //										}
+        //									},
+        //
+        //									success: function(data) {
+        //
+        //										//追加后端返回的数据
+        //										$('.lnj-recommend').append(data);
+        //									},
+        //									complete: function(data) {
+        //										//这里判断，数据加载成功之后，loading 隐藏
+        //										if(data.status == 200) {
+        //											//移除用于提示用户的loading
+        //											$('.lnj-recommend .loading').remove();
+        //										}
+        //									}
+        //
+        //								});
+        //							}
+        //						});
+        //					})
+    </script>
+</head>
+
+<body>
+<div class="lnj-header">
+    <div class="backpage"><span class="iconxy"><i class="iconfont icon-xiaoyuhao icons4"></i></span></div>
+    <div class="slider">
+        <ul>
+            <li>
+                <a href="###" target="_blank"><img src="images/12.jpg" alt="良农集学生有机餐"></a>
+            </li>
+            <li>
+                <a href="###" target="_blank"><img src="images/12.jpg" alt="良农集学生有机餐"></a>
+            </li>
+            <li>
+                <a href="###" target="_blank"><img src="images/12.jpg" alt="良农集学生有机餐"></a>
+            </li>
+            <li>
+                <a href="###" target="_blank"><img src="images/12.jpg" alt="良农集学生有机餐"></a>
+            </li>
+            <li>
+                <a href="###" target="_blank"><img src="images/12.jpg" alt="良农集学生有机餐"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<section>
+    <div class="section-2"><span class="icon-2 icon-if on-icon-2"><i class="iconfont icon-zan icons5"></i></span>
+        <p>推荐菜谱</p>
+    </div>
+    <div class="section-2"><span class="icon-2 icon-el"><i class="iconfont icon-pointerup icons5"></i></span>
+        <p>自选菜谱</p>
+    </div>
+    <div class="clear"></div>
+</section>
+<aside>
+    <div class="lnj-recommend">
+        <span class="lnj-icon-uj"><i class="iconfont icon-huo1 icon6"></i>营养师推荐菜谱</span>
+        <dl>
+            <dt>
+                <img src="images/2.jpg"/>
+                <div class="lnj-recommend-right">
+                    <span>第一天</span>
+                    <p>浇汁小肥牛 黄瓜炒肉片 松仁炒玉米 蒜蓉菠菜<br/>主食：米饭 馒头</p>
+                </div>
+                <div class="clear"></div>
+            </dt>
+            <dt>
+                <img src="images/2.jpg"/>
+                <div class="lnj-recommend-right">
+                    <span>第一天</span>
+                    <p>浇汁小肥牛 黄瓜炒肉片 松仁炒玉米 蒜蓉菠菜<br/>主食：米饭 馒头</p>
+                </div>
+                <div class="clear"></div>
+            </dt>
+            <dt>
+                <img src="images/2.jpg"/>
+                <div class="lnj-recommend-right">
+                    <span>第一天</span>
+                    <p>浇汁小肥牛 黄瓜炒肉片 松仁炒玉米 蒜蓉菠菜<br/>主食：米饭 馒头</p>
+                </div>
+                <div class="clear"></div>
+            </dt>
+            <dt>
+                <img src="images/2.jpg"/>
+                <div class="lnj-recommend-right">
+                    <span>第一天</span>
+                    <p>浇汁小肥牛 黄瓜炒肉片 松仁炒玉米 蒜蓉菠菜<br/>主食：米饭 馒头</p>
+                </div>
+                <div class="clear"></div>
+            </dt>
+            <dt>
+                <img src="images/2.jpg"/>
+                <div class="lnj-recommend-right">
+                    <span>第一天</span>
+                    <p>浇汁小肥牛 黄瓜炒肉片 松仁炒玉米 蒜蓉菠菜<br/>主食：米饭 馒头</p>
+                </div>
+                <div class="clear"></div>
+            </dt>
+        </dl>
+
+        <div class="foot-balance">
+            <div class="foot-balance-left">
+                <img src="img/6.png"/>
+                <p>￥600</p>
+            </div>
+            <div class="foot-balance-right">去确认</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="lnj-optional">
+        <div class="lnj-optional-top">
+            <ul>
+                <li class="optional-top-on">
+                    星期一<br/>9/1
+                </li>
+                <li>
+                    星期二<br/>9/2
+                </li>
+                <li class="optional-top-false">
+                    星期三<br/>9/3
+                </li>
+                <li>
+                    星期四<br/>9/4
+                </li>
+                <li>
+                    星期五<br/>9/5
+                </li>
+                <li>
+                    星期六<br/>9/6
+                </li>
+                <li style="border: none;">
+                    星期日<br/>9/16
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="lnj-optional-main">
+            <div class="lnj-optional-main-left">
+                <dl>
+                    <dt class="lnj-optional-main-left-on">第一周<br/><span>FIRST</span></dt>
+                    <dt>第二周<br/><span>SECOND</span></dt>
+                    <dt>第三周<br/><span>THIRD</span></dt>
+                    <dt>第四周<br/><span>FOURTH</span></dt>
+                    <dt style="border-bottom: none;">第五周<br/><span>FIFTH</span></dt>
+                </dl>
+            </div>
+            <div class="lnj-optional-main-right">
+                <dl>
+                    <dt>
+                        <img src="images/2.jpg"/>
+                        <div class="lnj-optional-groom">
+
+                            <div class="groom-title">
+                                扬州炒饭
+                            </div>
+                            <div class="groom-recom">
+                                <i class="iconfont icon-huo1 iconsg"></i>热卖
+
+                            </div>
+                            <div class="groom-money">
+                                ￥6.00
+                            </div>
+
+                        </div>
+                        <div class="groom-chose chose-on">
+                        </div>
+                        <div class="clear"></div>
+                    </dt>
+                    <dt>
+                        <img src="images/2.jpg"/>
+                        <div class="lnj-optional-groom">
+
+                            <div class="groom-title">
+                                扬州炒饭
+                            </div>
+                            <div class="groom-recom">
+                                <i class="iconfont icon-huo1 iconsg"></i>热卖
+                            </div>
+                            <div class="groom-money">
+                                ￥6.00
+                            </div>
+
+                        </div>
+                        <div class="groom-chose">
+                        </div>
+                        <div class="clear"></div>
+                    </dt>
+                    <dt>
+                        <img src="images/2.jpg"/>
+                        <div class="lnj-optional-groom">
+
+                            <div class="groom-title">
+                                扬州炒饭
+                            </div>
+                            <div class="groom-recom">
+                                <i class="iconfont icon-huo1 iconsg"></i>热卖
+                            </div>
+                            <div class="groom-money">
+                                ￥6.00
+                            </div>
+
+                        </div>
+                        <div class="groom-chose">
+                        </div>
+                        <div class="clear"></div>
+                    </dt>
+                    <dt>
+                        <img src="images/2.jpg"/>
+                        <div class="lnj-optional-groom">
+
+                            <div class="groom-title">
+                                扬州炒饭
+                            </div>
+                            <div class="groom-recom">
+                                <i class="iconfont icon-huo1 iconsg"></i>热卖
+                            </div>
+                            <div class="groom-money">
+                                ￥6.00
+                            </div>
+
+                        </div>
+                        <div class="groom-chose">
+                        </div>
+                        <div class="clear"></div>
+                    </dt>
+                    <dt>
+                        <img src="images/2.jpg"/>
+                        <div class="lnj-optional-groom">
+
+                            <div class="groom-title">
+                                扬州炒饭
+                            </div>
+                            <div class="groom-recom">
+                                <i class="iconfont icon-huo1 iconsg"></i>热卖
+                            </div>
+                            <div class="groom-money">
+                                ￥6.00
+                            </div>
+
+                        </div>
+                        <div class="groom-chose">
+                        </div>
+                        <div class="clear"></div>
+                    </dt>
+                </dl>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="foot-balance">
+            <div class="foot-balance-left">
+                <img src="img/6.png"/>
+                <p></p>
+            </div>
+            <div class="foot-balance-right">去确认</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</aside>
+</body>
+
+</html>

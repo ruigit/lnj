@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <metaname
+    ="x5-orientation"content="portrait">
+    <metaname
+    ="screen-orientation"content="portrait">
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>良农集学生有机餐</title>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script>
+        //			阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        })
+        //		背景高度
+        $(document).ready(function () {
+            var winHeight = window.innerHeight;
+            $(".lnj-content").css({height: winHeight});
+        })
+        $(function () {
+            var wait = $(".secdd").html();
+            timeOut();
+
+            /**
+             * 实现倒计时
+             */
+            function timeOut() {
+                if (wait != 0) {
+                    setTimeout(function () {
+                        $('.secdd').text(--wait);
+                        timeOut();
+                    }, 1000);
+                } else {
+                    location.href = "###";
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="lnj-content">
+    <p class="second"><span class="secdd">
+				3
+			</span>秒后关闭</p>
+    <a href="###">
+        <div class="lnj-enter">进入商城</div>
+    </a>
+</div>
+</body>
+</html>
