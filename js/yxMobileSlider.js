@@ -87,31 +87,26 @@
                     autoMove();
                 })
             }
-
             //自动运动
             function autoMove() {
                 timer = setInterval(doMove, s.during);
             }
-
             //停止自动运动
             function stopMove() {
                 clearInterval(timer);
             }
-
             //运动效果
             function doMove() {
                 iCurr = iCurr >= num - 1 ? 0 : iCurr + 1;
                 doAnimate(-moveWidth * iCurr);
                 oFocus.eq(iCurr).addClass("current").siblings().removeClass("current");
             }
-
             //绑定触摸事件
             function bindTochuEvent() {
                 oMover.get(0).addEventListener('touchstart', touchStartFunc, false);
                 oMover.get(0).addEventListener('touchmove', touchMoveFunc, false);
                 oMover.get(0).addEventListener('touchend', touchEndFunc, false);
             }
-
             //获取触点位置
             function touchPos(e) {
                 var touches = e.changedTouches, l = touches.length, touch, tagX, tagY;
@@ -124,7 +119,6 @@
                 oPosition.y = tagY;
                 return oPosition;
             }
-
             //触摸开始
             function touchStartFunc(e) {
                 clearInterval(timer);
@@ -146,7 +140,6 @@
                     });
                 }
             }
-
             //触摸结束
             function touchEndFunc(e) {
                 touchPos(e);
@@ -178,7 +171,6 @@
                     oFocus.eq(iCurr).addClass("current").siblings().removeClass("current");
                 }
             }
-
             //移动设备基于屏幕宽度设置容器宽高
             function mobileSettings() {
                 moveWidth = $(window).width();
@@ -188,17 +180,15 @@
                     left: -iCurr * moveWidth
                 });
             }
-
             //动画效果
             function doAnimate(iTarget, fn) {
                 oMover.stop().animate({
                     left: iTarget
                 }, _this.speed, function () {
-                    if (fn)
+                    if (fn) 
                         fn();
                 });
             }
-
             //判断是否是移动设备
             function isMobile() {
                 if (navigator.userAgent.match(/Android/i) || navigator.userAgent.indexOf('iPhone') != -1 || navigator.userAgent.indexOf('iPod') != -1 || navigator.userAgent.indexOf('iPad') != -1) {

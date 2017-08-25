@@ -4,10 +4,8 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <metaname
-    ="x5-orientation" content="portrait">
-    <metaname
-    ="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
     <meta name="format-detection" content="telephone=no"/>
     <link href="favicon.ico" rel="shortcut icon">
     <title>良农集学生有机餐</title>
@@ -62,9 +60,15 @@
                 $(this).addClass("lnj-optional-main-left-on"); //加绿色
                 $(this).siblings().removeClass();
             });
-            $(".groom-chose").click(function () {
+            $('.lnj-optional-main-right dl dt').on('click', '.groom-chose', function () {
                 $(this).toggleClass("chose-on");
+
             });
+
+
+//						$(".groom-chose").click(function() {
+//							$(this).toggleClass("chose-on");
+//						});
         });
         //					$(function() {
         //						//数据加载时的加载图,用于提示用户数据正在加载!

@@ -83,7 +83,6 @@
     font-size: 2.2em;
     padding: 0 1.5em;
 }
-
 .area_grid {
     position: relative;
     top: 2em;
@@ -117,7 +116,6 @@
 .larea_cancel {
     margin-left: 60%;
 }
-
 .area_btn_box {
     display: -webkit-box;
     -webkit-box-pack: justify;
