@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/style.css"/>
     <!--地址选择-->
     <link rel="stylesheet" href="css/lArea.css"/>
-    <script type="text/javascript" src="js/lArea.min.js"></script>
+    <script type="text/javascript" src="js/lArea.js"></script>
+
     <!--时间选择-->
     <link rel="stylesheet" href="css/lCalendar.css"/>
     <script type="text/javascript" src="js/lCalendar.min.js"></script>
@@ -71,15 +72,25 @@
         })
         //		地址选择
         $(function () {
-            var area = new lArea();
+            var area = new LArea();
             area.init({
                 'trigger': '#demo4',
+                'valueTo': '#value1', //选择完毕后id属性输出到该位置
+                'keys': {
+                    id: 'id',
+                    name: 'name'
+                },
                 'data': 'js/AreaData.json'
             });
-            var qrea = new lArea();
+            var qrea = new LArea();
             qrea.init({
                 'trigger': '#demo5',
-                'data': 'js/QreaData.json'
+                'valueTo': '#value2', //选择完毕后id属性输出到该位置
+                'data': 'js/QreaData.json',
+                'keys': {
+                    id: 'id',
+                    name: 'name'
+                },
             });
         })
     </script>
@@ -98,8 +109,10 @@
         <div class="clear"></div>
         <div class="delivery-school-address">
             <input id="demo4" type="text" name="input_address" class="demo4"/>
+            <input id="value1" type="hidden">
             <i class="iconfont icon-xiala"></i>
             <input id="demo5" type="text" name="input_address" class="demo5"/>
+            <input id="value2" type="hidden">
             <i class="iconfont icon-xiala"></i>
         </div>
     </div>
