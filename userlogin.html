@@ -21,8 +21,10 @@
         })
         //		背景高度
         $(document).ready(function () {
-            var winHeight = $(window).height() - $(".inform-header").height();
-            $(".userlogin-content").css({height: winHeight});
+            if ($(window).height() > $(".userlogin-content").height()) {
+                var winHeight = $(window).height() - $(".inform-header").height();
+                $(".userlogin-content").css({height: winHeight});
+            }
         })
         window.onresize = function () {    //手机屏幕横过来
 
