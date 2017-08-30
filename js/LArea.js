@@ -242,7 +242,9 @@ window.LArea = (function () {
 
             _self.getData(function () {
                 _self.trigger.addEventListener('click', popupArea);
+
             });
+
         },
         //重置节点个数
         setGearTooth: function (data) {
@@ -315,8 +317,11 @@ window.LArea = (function () {
             _self.trigger.value = provinceText + ((cityText) ? (' ' + cityText) : ('')) + ((countyText) ? (' ' + countyText) : (''));
             _self.value = [provinceVal, cityVal, countyVal];
             if (this.valueTo) {
+
                 this.valueTo.value = provinceCode + ((cityCode) ? (',' + cityCode) : ('')) + ((countyCode) ? (',' + countyCode) : (''));
+
             }
+
             _self.close(e);
         },
         close: function (e) {

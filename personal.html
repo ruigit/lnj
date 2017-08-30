@@ -21,9 +21,39 @@
         })
         //		背景高度
         $(document).ready(function () {
-            var winHeight = $(window).height() - $(".inform-header").height();
-            $(".personal-title").css({height: winHeight});
+            if ($(window).height() > $(".personal-title").height()) {
+                var winHeight = $(window).height() - $(".inform-header").height();
+                $(".personal-title").css({height: winHeight});
+            }
         })
+
+        $(function () {
+            $('.personal-bianji').bind("click", function () {
+                var rea = $('.span').attr("readOnly");
+
+                if (!rea) {
+                    $(".personal-title").find('.span').attr("readOnly", true);
+                    $('.span').focus(function () {
+                        $('footer').css("position", "fixed");
+
+                    });
+                } else {
+                    $(".personal-title").find('.span').attr("readOnly", false);
+                    $('.span').focus(function () {
+                        $('footer').css("position", "relative");
+
+                    });
+                    $('.span').blur(function () {
+                        $('footer').css("position", "fixed");
+
+                    })
+
+                }
+
+            });
+
+        })
+        
     </script>
 </head>
 <body>
@@ -41,22 +71,22 @@
 
     <div class="personal-title-lik">
         <p>宝贝姓名</p>
-        <span>王小二</span>
+        <input type="text" name="input" class="span" value="王小二" readOnly="true"/>
         <div class="clear"></div>
     </div>
     <div class="personal-title-lik">
         <p>宝贝生日</p>
-        <span>2017.02.10</span>
+        <input type="text" name="input" class="span" value="1990.01.01" readOnly="true"/>
         <div class="clear"></div>
     </div>
     <div class="personal-title-lik">
         <p>联系方式</p>
-        <span>15487545896</span>
+        <input type="text" name="input" class="span" value="18548787458" readOnly="true"/>
         <div class="clear"></div>
     </div>
     <div class="personal-title-lik bot-personal">
         <p>学校班级</p>
-        <span>文化路二小-三年级二班</span>
+        <input type="text" name="input" class="span" value="文化路二小-三年级二班" readOnly="true"/>
         <div class="clear"></div>
     </div>
     <div class="personal-title-lik botto">

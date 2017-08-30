@@ -382,7 +382,8 @@ footer {
 .footer-4 p {
 	text-align: center;
 	font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
-	font-size: 0.1rem;
+    font-size: 0.2rem;
+    padding-top: 0.05rem;
 }
 
 *,
@@ -1136,17 +1137,34 @@ a {
 	letter-spacing: 0.01rem;
 	font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
-
 .personal-title-lik span {
+    width: 50%;
+    float: left;
+    text-align: right;
+
+    line-height: 0.5rem;
+    margin-left: 0.4rem;
+    font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+    font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
+    border: none;
+    color: #999;
+
+}
+
+.personal-title-lik .span {
 	width: 50%;
 	float: left;
 	text-align: right;
-	color: #999;
-	line-height: 0.4rem;
+
+    line-height: 0.5rem;
 	margin-left: 0.4rem;
 	font-size: 0.2rem;
 	letter-spacing: 0.01rem;
 	font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
+    border: none;
+    color: #999;
+
 }
 
 .bot-personal {
@@ -1296,6 +1314,7 @@ a {
 	font: 0.2rem Arial;
 	font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
 	text-align: right;
+    background: #fff;
 }
 
 .demo6 {
@@ -1307,6 +1326,7 @@ a {
 	font: 0.2rem Arial;
 	font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
 	text-align: right;
+    background: #fff;
 }
 
 .demo2 {
@@ -1319,6 +1339,7 @@ a {
 	font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
 	text-align: right;
 	letter-spacing: 0.01rem;
+    background: #fff;
 }
 
 .demo3 {
@@ -1331,6 +1352,7 @@ a {
 	font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
 	text-align: right;
 	letter-spacing: 0.01rem;
+    background: #fff;
 }
 
 .delivery-school {

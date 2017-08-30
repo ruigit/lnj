@@ -28,10 +28,12 @@
         })
         //		背景高度
         $(document).ready(function () {
-            var winHeight = $(window).height() - $(".inform-header").height();
-            $(".delivery-title").css({
-                height: winHeight
-            });
+            if ($(window).height() > $(".delivery-title").height()) {
+                var winHeight = $(window).height() - $(".inform-header").height();
+                $(".delivery-title").css({
+                    height: winHeight
+                });
+            }
         })
         window.onresize = function () { //手机屏幕横过来
 
@@ -82,6 +84,7 @@
                 },
                 'data': 'js/AreaData.json'
             });
+
             var qrea = new LArea();
             qrea.init({
                 'trigger': '#demo5',
@@ -90,8 +93,17 @@
                 'keys': {
                     id: 'id',
                     name: 'name'
-                },
+                }
             });
+
+        })
+        $(function () {
+            $('.demo2 , .demo3').focus(function () {
+                $('footer').css("position", "relative");
+            });
+            $('.demo2 , .demo3').blur(function () {
+                $('footer').css("position", "fixed");
+            })
         })
     </script>
 </head>
@@ -108,10 +120,10 @@
         <span class="de-school-aldr">历史记录</span>
         <div class="clear"></div>
         <div class="delivery-school-address">
-            <input id="demo4" type="text" name="input_address" class="demo4"/>
+            <input id="demo4" type="button" name="input_address" class="demo4"/>
             <input id="value1" type="hidden">
             <i class="iconfont icon-xiala"></i>
-            <input id="demo5" type="text" name="input_address" class="demo5"/>
+            <input id="demo5" type="button" name="input_address" class="demo5"/>
             <input id="value2" type="hidden">
             <i class="iconfont icon-xiala"></i>
         </div>
@@ -150,7 +162,7 @@
     <div class="delivery-title-lik">
         <p>宝贝生日</p>
         <span>
-             <input class="demo1" id="demo1" type="text" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
+             <input class="demo1" id="demo1" type="button" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
                     value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
             <i class="iconfont icon-xiala"></i></span>
         <div class="clear"></div>
@@ -158,7 +170,7 @@
     <div class="delivery-title-lik">
         <p>配送日期</p>
         <span>
-             <input class="demo6" id="demo6" type="text" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
+             <input class="demo6" id="demo6" type="button" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
                     value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
             <i class="iconfont icon-xiala"></i></span>
         <div class="clear"></div>
