@@ -951,11 +951,12 @@ a {
 
 .confirm-li-first {
 	border-right: 2px #d7d5d5 solid;
-	font-size: 0.35rem;
+    font-size: 0.3rem;
 	line-height: 0.45rem;
 	letter-spacing: 0.01rem;
 	margin-top: 0.2rem;
 	width: 22%;
+    text-align: left;
 }
 
 .confirm-li-se {
@@ -1152,6 +1153,20 @@ a {
 
 }
 
+.personal-title-lik .span1 {
+    width: 50%;
+    float: left;
+    text-align: right;
+
+    line-height: 0.5rem;
+    margin-left: 0.4rem;
+    font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+    font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
+    border: none;
+    color: #999;
+
+}
 .personal-title-lik .span {
 	width: 50%;
 	float: left;
@@ -1165,6 +1180,10 @@ a {
     border: none;
     color: #999;
 
+}
+
+.addspan {
+    color: blue !important;
 }
 
 .bot-personal {

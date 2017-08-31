@@ -30,14 +30,24 @@
         $(function () {
             $('.personal-bianji').bind("click", function () {
                 var rea = $('.span').attr("readOnly");
+                var dat = $('.span1').val();
 
                 if (!rea) {
+//                    不可编辑
+                    $('.personal-bianji').addClass('icon-bianji');
+                    $('.personal-bianji').removeClass('icon-dingdan');
+                    $(".personal-title").find('.span').removeClass('addspan');
+                    $(".personal-title").find('.span1').removeClass('addspan');
                     $(".personal-title").find('.span').attr("readOnly", true);
                     $('.span').focus(function () {
                         $('footer').css("position", "fixed");
 
                     });
                 } else {
+//                    可编辑
+                    $('.personal-bianji').removeClass('icon-bianji');
+                    $('.personal-bianji').addClass('icon-dingdan');
+                    $(".personal-title").find('.span').addClass('addspan');
                     $(".personal-title").find('.span').attr("readOnly", false);
                     $('.span').focus(function () {
                         $('footer').css("position", "relative");
@@ -47,7 +57,10 @@
                         $('footer').css("position", "fixed");
 
                     })
-
+                    if (dat == "") {
+                        $(".personal-title").find('.span1').addClass('addspan');
+                        $(".personal-title").find('.span1').attr("readOnly", false);
+                    }
                 }
 
             });
@@ -76,7 +89,7 @@
     </div>
     <div class="personal-title-lik">
         <p>宝贝生日</p>
-        <input type="text" name="input" class="span" value="1990.01.01" readOnly="true"/>
+        <input type="text" name="input" class="span1" value="" readOnly="true"/>
         <div class="clear"></div>
     </div>
     <div class="personal-title-lik">
@@ -86,7 +99,7 @@
     </div>
     <div class="personal-title-lik bot-personal">
         <p>学校班级</p>
-        <input type="text" name="input" class="span" value="文化路二小-三年级二班" readOnly="true"/>
+        <span>文化路二小-三年级二班</span>
         <div class="clear"></div>
     </div>
     <div class="personal-title-lik botto">
