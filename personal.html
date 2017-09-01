@@ -13,6 +13,9 @@
     <script type="text/javascript" src="js/fastclick.js"></script>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <!--时间选择-->
+    <link rel="stylesheet" href="css/lCalendar.css"/>
+    <script type="text/javascript" src="js/lCalendar.min.js"></script>
     <script>
         //			阻止穿透事件
         $(function () {
@@ -39,7 +42,9 @@
                     $(".personal-title").find('.span').removeClass('addspan');
                     $(".personal-title").find('.span1').removeClass('addspan');
                     $(".personal-title").find('.span').attr("readOnly", true);
-                    $('.span').focus(function () {
+                    $(".personal-title").find('.span1').attr("readOnly", true);
+                    $(".personal-title").find('#span1').addClass('displa');
+                    $('.span, .span1').focus(function () {
                         $('footer').css("position", "fixed");
 
                     });
@@ -49,24 +54,38 @@
                     $('.personal-bianji').addClass('icon-dingdan');
                     $(".personal-title").find('.span').addClass('addspan');
                     $(".personal-title").find('.span').attr("readOnly", false);
-                    $('.span').focus(function () {
+                    $(".personal-title").find('#span1').removeClass('displa');
+                    $('.span, .span1').focus(function () {
                         $('footer').css("position", "relative");
 
                     });
-                    $('.span').blur(function () {
+                    $('.span, .span1').blur(function () {
                         $('footer').css("position", "fixed");
 
                     })
                     if (dat == "") {
                         $(".personal-title").find('.span1').addClass('addspan');
                         $(".personal-title").find('.span1').attr("readOnly", false);
+                        $(".personal-title").find('#span1').removeClass('displa');
+                        //		时间选择
+                        $(function () {
+                            var calendar = new lCalendar();
+                            calendar.init({
+                                'trigger': '#span1',
+                                'type': 'date'
+                            });
+                        })
+
+                    } else {
+                        $(".personal-title").find('.span1').attr("readOnly", true);
+                        $(".personal-title").find('#span1').addClass('displa');
                     }
                 }
 
             });
 
         })
-        
+
     </script>
 </head>
 <body>
@@ -89,7 +108,7 @@
     </div>
     <div class="personal-title-lik">
         <p>宝贝生日</p>
-        <input type="text" name="input" class="span1" value="" readOnly="true"/>
+        <input type="button" name="input" class="span1" id="span1" value="" readOnly="true"/>
         <div class="clear"></div>
     </div>
     <div class="personal-title-lik">

@@ -1157,7 +1157,7 @@ a {
     width: 50%;
     float: left;
     text-align: right;
-
+    background: #fff;
     line-height: 0.5rem;
     margin-left: 0.4rem;
     font-size: 0.2rem;
@@ -1183,9 +1183,12 @@ a {
 }
 
 .addspan {
-    color: blue !important;
+    color: #63b7fd !important;
 }
 
+.displa {
+    pointer-events: none;
+}
 .bot-personal {
 	border-bottom: 6px #d7d5d5 solid !important;
 }
