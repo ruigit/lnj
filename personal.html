@@ -44,7 +44,7 @@
                     $(".personal-title").find('.span').attr("readOnly", true);
                     $(".personal-title").find('.span1').attr("readOnly", true);
                     $(".personal-title").find('#span1').addClass('displa');
-                    $('.span, .span1').focus(function () {
+                    $('.span').focus(function () {
                         $('footer').css("position", "fixed");
 
                     });
@@ -55,11 +55,11 @@
                     $(".personal-title").find('.span').addClass('addspan');
                     $(".personal-title").find('.span').attr("readOnly", false);
                     $(".personal-title").find('#span1').removeClass('displa');
-                    $('.span, .span1').focus(function () {
+                    $('.span').focus(function () {
                         $('footer').css("position", "relative");
 
                     });
-                    $('.span, .span1').blur(function () {
+                    $('.span').blur(function () {
                         $('footer').css("position", "fixed");
 
                     })
