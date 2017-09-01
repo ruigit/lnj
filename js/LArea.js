@@ -197,6 +197,7 @@ window.LArea = (function () {
                         setDuration();
                     }
                     if (stopGear) {
+                        // var gearVal = Math.abs(pos) / 2 || 0 ;
                         var gearVal = Math.abs(pos) / 2;
                         setGear(target, gearVal);
                         clearInterval(target["int_" + target.id]);
