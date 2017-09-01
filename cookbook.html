@@ -47,7 +47,7 @@
             });
             $(".lnj-optional-top ul li").not(".optional-top-false").click(function () {
 
-                $(this).siblings().not(".optional-top-false").removeClass();
+                $(this).siblings().not(".optional-top-false, div").removeClass();
 
                 $(this).addClass("optional-top-on");//加绿色
                 //$(this).siblings().removeClass();
