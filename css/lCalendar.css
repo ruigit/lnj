@@ -79,7 +79,7 @@
 .date_roll_mask {
     -webkit-mask: -webkit-gradient(linear, 0% 40%, 0% 0%, from(#debb47), to(rgba(36, 142, 36, 0)));
     -webkit-mask: -webkit-linear-gradient(bottom, #debb47 50%, rgba(36, 142, 36, 0));
-    padding: 0 0 3em 0
+    padding: 1em 0 0 0
 }
 
 .date_roll > div:nth-child(2) {
@@ -147,13 +147,21 @@
 
 .date_btn {
     color: #333;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 2em;
     text-align: center;
     padding: .8em 1em;
-    cursor: pointer
+    cursor: pointer;
 }
 
+.lcalendar_cancel {
+    margin-left: 60%;
+}
+
+.lcalendar_finish {
+    color: #61d2a7;
+    margin-right: 5%;
+}
 .date_btn_box {
     display: -webkit-box;
     -webkit-box-pack: justify;

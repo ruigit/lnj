@@ -34,8 +34,8 @@
     <script>
         $(function () {
             $(".section-2").click(function () {
-                $(this).children().eq(0).toggleClass("on-icon-2");
-                $(this).siblings().children().eq(0).toggleClass("on-icon-2");
+                $(this).children().eq(0).addClass("on-icon-2");
+                $(this).siblings().children().eq(0).removeClass("on-icon-2");
                 if ($(".icon-if").hasClass("on-icon-2")) {
                     $(".lnj-recommend").show();
                     $(".lnj-optional").hide()
@@ -70,49 +70,52 @@
 //							$(this).toggleClass("chose-on");
 //						});
         });
-        //					$(function() {
-        //						//数据加载时的加载图,用于提示用户数据正在加载!
-        //						var loadDiv = '<div class="loading"></div>';
-        //						//监听窗口的鼠标滚轮事件
-        //						$(window).scroll(function() {
-        //							//当滚轮滚动到文档最末位，也就是拉到了最底下
-        //							if($(window).scrollTop() == $(document).height() - $(window).height()) {
+        //        					$(function() {
+        //        						//数据加载时的加载图,用于提示用户数据正在加载!
+        //        						var loadDiv = '<div class="loadin"><div class="loading"></div></div>';
         //
-        //								//发送ajax请求获取数据
-        //								$.ajax({
-        //									type: 'get',
-        //									url: '',
-        //									data: data,
-        //									dataType: 'json',
-        //									//数据加载前调用的方法 beforeSend()
-        //									beforeSend: function(data) {
-        //										//这里判断，如果没有加载数据，会显示loading
-        //										if(data.readyState == 0) {
-        //											//避免多次滚轮触发事件造成图片的多次追加，加上此判断
-        //											if($('.lnj-recommend .loading').length == 0) {
-        //												//将loading插入到内部的内容最末位
-        //												$('.lnj-recommend').append(loadDiv);
-        //											}
-        //										}
-        //									},
+        //                                //监听窗口的鼠标滚轮事件
+        //        						$(window).scroll(function() {
+        //        							//当滚轮滚动到文档最末位，也就是拉到了最底下
+        //        							if($(window).scrollTop() == $(document).height() - $(window).height()) {
         //
-        //									success: function(data) {
+        //        								//发送ajax请求获取数据
+        //        								$.ajax({
+        //        									type: 'get',
+        //        									url: '',
+        //        									data: data,
+        //        									dataType: 'json',
+        //        									//数据加载前调用的方法 beforeSend()
+        //        									beforeSend: function(data) {
+        //        										//这里判断，如果没有加载数据，会显示loading
+        //        										if(data.readyState == 0) {
+        //        											//避免多次滚轮触发事件造成图片的多次追加，加上此判断
+        //        											if($('.lnj-recommend dl .loading').length == 0) {
+        //        												//将loading插入到内部的内容最末位
+        //        												 $('.lnj-recommend dl').append(loadDiv);
+        //        											}
+        //        										}
+        //        									},
         //
-        //										//追加后端返回的数据
-        //										$('.lnj-recommend').append(data);
-        //									},
-        //									complete: function(data) {
-        //										//这里判断，数据加载成功之后，loading 隐藏
-        //										if(data.status == 200) {
-        //											//移除用于提示用户的loading
-        //											$('.lnj-recommend .loading').remove();
-        //										}
-        //									}
+        //        									success: function(data) {
         //
-        //								});
-        //							}
-        //						});
-        //					})
+        //        										//追加后端返回的数据
+        //        										$('.lnj-recommend').append(data);
+        //        									},
+        //        									complete: function(data) {
+        //        										//这里判断，数据加载成功之后，loading 隐藏
+        //        										if(data.status == 200) {
+        //        											//移除用于提示用户的loading
+        //        											$('.lnj-recommend dl .loading').remove();
+        //                                                    $('body .loading,.loadin').remove();
+        //                                                    window.open("");
+        //        										}
+        //        									}
+        //
+        //        								});
+        //        							}
+        //        						});
+        //        					})
     </script>
 </head>
 
