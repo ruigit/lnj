@@ -31,6 +31,28 @@
             $(".userlogin-content").css({"height": "auto"});
 
         }
+        $(function () {
+//查看密码
+            $(".fa-question-circle").click(function () {
+                if ($(this).attr("data-show") == 1) {//明文
+                    $(this).attr("data-show", "2");
+                    var b = $(this).siblings(".mima_dd").val();
+                    $(this).siblings(".mima_wz").val(b);
+                    $(this).siblings(".mima_dd").hide();
+                    $(this).siblings(".mima_wz").show();
+                    return;
+                }
+                if ($(this).attr("data-show") == 2) {//密文
+                    $(this).attr("data-show", "1");
+                    var a = $(this).siblings(".mima_wz").val();
+                    $(this).siblings(".mima_dd").val(a);
+                    $(this).siblings(".mima_dd").show();
+                    $(this).siblings(".mima_wz").hide();
+                    return;
+                }
+            });
+        });
+
     </script>
 </head>
 <body>
@@ -50,9 +72,12 @@
             <i class="iconfont icon-denglu"></i>
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="登录密码">
+            <input name="" type="text" class="form-control mima_dd " placeholder="请输入密码" style="display: none;">
+            <input name="" type="password" class="form-control mima_wz" style="display: inline-block;"
+                   placeholder="请输入密码">
+            <!--<input type="password"  class="form-control" id="inputPassword3" placeholder="登录密码">-->
             <i class="iconfont icon-denglumima"></i>
-            <a href="" class="iconfont icon-dengluyeyanjing fa-question-circle"></a>
+            <p data-show="2" class="iconfont icon-dengluyeyanjing fa-question-circle"></p>
         </div>
 
     </form>
