@@ -325,10 +325,10 @@ article {
     width: 100%;
     height: 0.3rem;
     line-height: 0.3rem;
-    font-size: 0.15rem;
+    font-size: 0.2rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     text-align: center;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
     color: #333;
     margin-top: 0.15rem;
 }
@@ -351,14 +351,14 @@ article {
     width: 2.5rem;
     height: 0.6rem;
     line-height: 0.6rem;
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     color: #61d2a7;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     border: 1px #61d2a7 solid;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.01rem;
 }
 
 footer {

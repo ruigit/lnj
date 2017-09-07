@@ -22,7 +22,7 @@
         //		背景高度
         $(document).ready(function () {
             if ($(window).height() > $(".myconfirm-content").height()) {
-                var winHeight = window.innerHeight;
+                var winHeight = $(window).height();
                 $(".myconfirm-content").css({height: winHeight});
             }
 
