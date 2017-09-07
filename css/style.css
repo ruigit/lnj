@@ -127,6 +127,16 @@ body {
     background: #ececec;
 }
 
+::-webkit-scrollbar { /*隐藏滚轮webkit内核*/
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+/*ios上的input，select清除默认*/
+input, select {
+    -webkit-appearance: none;
+}
 .lnj-content {
     width: 100%;
     height: auto;
@@ -1653,10 +1663,6 @@ a {
     opacity: 1;
 }
 
-/*ios上的input，select清除默认*/
-input, select {
-    -webkit-appearance: none;
-}
 input:-ms-input-placeholder {
     color: #fff;
     opacity: 1;
