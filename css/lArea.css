@@ -51,6 +51,7 @@
 .area_roll {
     display: -webkit-box;
     width: 100%;
+    font-size: 0.8em;
     height: auto;
     overflow: hidden;
     font-weight: normal;
