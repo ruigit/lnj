@@ -1254,6 +1254,7 @@ a {
 
 .personal-head img {
     width: 2rem;
+    height: 2rem;
     margin: 2px;
     border: 3px #d5d5d5 solid;
     -moz-border-radius: 50%;
@@ -1267,6 +1268,7 @@ a {
     font-size: 0.4rem !important;
     top: 1.5rem;
     right: 0.5rem;
+    line-height: 0.5rem !important;
 }
 
 /*个人中心end*/
