@@ -1377,6 +1377,10 @@ a {
     padding-top: 0.2rem;
 }
 
+.xiala-right {
+    float: right;
+}
+
 .demo1 {
     width: 80%;
     height: 0.5rem;

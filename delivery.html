@@ -51,6 +51,9 @@
             $(".history_finish").click(function () {
                 $(".de-school-history").hide();
                 $(".historyDate").hide();
+//                使用历史记录就隐藏点击弹出框,清空input值
+                $("#demo4, #demo5").hide();
+                $("#demo4, #demo5").attr("value", "");
             });
             $(".delivery-title-chose ul li").click(function () {
                 $(this).children().addClass("delivery-on"); //加绿色
@@ -121,12 +124,14 @@
         <div class="delivery-school-address">
             <input id="demo4" type="button" name="input_address" class="demo4"/>
             <input id="value1" type="hidden">
-            <i class="iconfont icon-xiala"></i>
+            <i class="iconfont icon-xiala xiala-right"></i>
+            <div class="clear"></div>
         </div>
         <div class="delivery-school-address" style="margin-bottom: 0.1rem;">
             <input id="demo5" type="button" name="input_address" class="demo5"/>
             <input id="value2" type="hidden">
-            <i class="iconfont icon-xiala"></i>
+            <i class="iconfont icon-xiala xiala-right"></i>
+            <div class="clear"></div>
         </div>
     </div>
 
