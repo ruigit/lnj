@@ -558,7 +558,8 @@ a {
 
 .lnj-recommend dl dt img {
     float: left;
-    width: 30%;
+    width: 2rem;
+    height: 2rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: middle;
