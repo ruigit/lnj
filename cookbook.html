@@ -43,7 +43,13 @@
                 }
                 if ($(".icon-el").hasClass("on-icon-2")) {
                     $(".lnj-optional").show();
-                    $(".lnj-recommend").hide()
+                    $(".lnj-recommend").hide();
+//                    如果li里的false的个数等于7，就隐藏右侧数据
+                    if ($("#ul_week .optional-top-false").length == 7) {
+                        $(".lnj-optional-main-right dl").addClass("false7");
+                    } else {
+                        $(".lnj-optional-main-right dl").removeClass("false7");
+                    }
                 }
             });
             $(".lnj-optional-top ul li").not(".optional-top-false").click(function () {
@@ -209,23 +215,23 @@
     </div>
     <div class="lnj-optional">
         <div class="lnj-optional-top">
-            <ul>
-                <li class="optional-top-on">
+            <ul id="ul_week">
+                <li class="optional-top-false">
                     星期一<br/>9/1
                 </li>
-                <li>
+                <li class="optional-top-false">
                     星期二<br/>9/2
                 </li>
                 <li class="optional-top-false">
                     星期三<br/>9/3
                 </li>
-                <li>
+                <li class="optional-top-false">
                     星期四<br/>9/4
                 </li>
-                <li>
+                <li class="optional-top-false">
                     星期五<br/>9/5
                 </li>
-                <li>
+                <li class="optional-top-false">
                     星期六<br/>9/6
                 </li>
                 <li style="border: none;">
