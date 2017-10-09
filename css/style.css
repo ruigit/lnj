@@ -137,6 +137,7 @@ body {
 input, select {
     -webkit-appearance: none;
 }
+
 .lnj-content {
     width: 100%;
     height: auto;
@@ -684,6 +685,7 @@ a {
 .false7 {
     visibility: hidden;
 }
+
 .lnj-optional-main {
     background: #fff;
     padding-bottom: 1.2rem;
@@ -1728,6 +1730,7 @@ input::-webkit-input-placeholder {
         padding-left: 8%;
     }
 }
+
 /*pad横屏*/
 
 @media only screen and (min-width: 1024px) {
@@ -1751,6 +1754,7 @@ input::-webkit-input-placeholder {
     .form-horizontal .form-group i {
         left: 0.8rem;
     }
+
     .icon-denglumima {
         left: 0.85rem !important;
     }
