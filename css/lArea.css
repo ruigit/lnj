@@ -54,14 +54,14 @@
     font-size: 0.8em;
     height: auto;
     overflow: hidden;
-    font-weight: normal;
+    /*font-weight: normal;*/
     background-color: transparent;
     -webkit-mask: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#debb47), to(rgba(36, 142, 36, 0)));
     -webkit-mask: -webkit-linear-gradient(top, #debb47 50%, rgba(36, 142, 36, 0))
 }
 
 .area_roll > div {
-    font-size: 1.4em;
+    font-size: 1.9em;
     height: 6em;
     float: left;
     background-color: transparent;
