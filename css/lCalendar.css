@@ -61,7 +61,7 @@
     font-size: 0.8em;
     background-color: transparent;
     -webkit-mask: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#debb47), to(rgba(36, 142, 36, 0)));
-    -webkit-mask: -webkit-linear-gradient(top, #debb47 50%, rgba(36, 142, 36, 0))
+    /*-webkit-mask: -webkit-linear-gradient(top, #debb47 50%, rgba(36, 142, 36, 0));*/
 }
 
 .date_roll > div,
@@ -78,7 +78,7 @@
 
 .date_roll_mask {
     -webkit-mask: -webkit-gradient(linear, 0% 40%, 0% 0%, from(#debb47), to(rgba(36, 142, 36, 0)));
-    -webkit-mask: -webkit-linear-gradient(bottom, #debb47 50%, rgba(36, 142, 36, 0));
+    /*-webkit-mask: -webkit-linear-gradient(bottom, #debb47 50%, rgba(36, 142, 36, 0));*/
     padding: 1em 0 0 0
 }
 
@@ -147,7 +147,7 @@
 
 .date_btn {
     color: #333;
-    font-size: 1.2em;
+    font-size: 1.6em;
     line-height: 2em;
     text-align: center;
     padding: .8em 1em;
@@ -176,6 +176,14 @@
     margin-top: -6em
 }
 
+.area-roll-title {
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    color: #333;
+    font-size: 2.2em;
+    padding: 0 1.5em;
+}
 .date_roll > div .gearq {
     width: 100%
 }

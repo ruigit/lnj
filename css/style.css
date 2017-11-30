@@ -297,17 +297,17 @@ aside {
 }
 
 .aside-ul li i {
-    width: 60%;
+    width: 80%;
     height: 0.35rem;
     color: #666;
     line-height: 0.35rem;
-    font-size: 0.1rem;
+    font-size: 0.2rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     text-align: center;
     border: 0.5px #707070 solid;
     font-style: normal;
     display: block;
-    margin: 0 20%;
+    margin: 0 10%;
     overflow: hidden;
 }
 
@@ -341,7 +341,7 @@ article {
     width: 100%;
     height: 0.3rem;
     line-height: 0.3rem;
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     text-align: center;
     letter-spacing: 0.05rem;
@@ -396,7 +396,7 @@ footer {
 .footer-4 p {
     text-align: center;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     padding-top: 0.05rem;
 }
 
@@ -595,7 +595,7 @@ a {
 .lnj-recommend-right p {
     width: auto;
     height: auto;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     color: #333;
     line-height: 0.3rem;
@@ -671,12 +671,12 @@ a {
     border-right: 1px #d3d3d3 solid;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     color: #000;
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     line-height: 0.3rem;
     letter-spacing: 0.01rem;
     text-align: center;
     float: left;
-    padding: 0.1rem 0;
+    padding: 0.2rem 0;
 }
 
 .optional-top-on {
@@ -706,8 +706,8 @@ a {
     /*border-left: 1px #d3d3d3 solid;*/
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     color: #000;
-    font-size: 0.25rem;
-    line-height: 0.4rem;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
     letter-spacing: 0.01rem;
     text-align: center;
     font-weight: 500;
@@ -721,8 +721,8 @@ a {
 
 .lnj-optional-main-left dl dt span {
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
-    font-size: 0.1rem;
-    line-height: 0.4rem;
+    font-size: 0.22rem;
+    line-height: 0.5rem;
     letter-spacing: 0.01rem;
     text-align: center;
     font-weight: 400;
@@ -983,7 +983,7 @@ a {
     color: #666;
     line-height: 0.4rem;
     margin-left: 0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
@@ -997,7 +997,7 @@ a {
 }
 
 .confirm-centent dl dt {
-    width: 86%;
+    width: 88%;
     height: auto;
     margin: 0 auto;
     padding: 0.25rem 0;
@@ -1024,7 +1024,7 @@ a {
     width: 74%;
     line-height: 0.4rem;
     margin-left: 4%;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     letter-spacing: 0.01rem;
     padding-top: 0.1rem;
 }
@@ -1096,7 +1096,7 @@ a {
     color: #999;
     line-height: 0.4rem;
     margin-left: 0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
@@ -1111,9 +1111,9 @@ a {
     float: left;
     color: #fff;
     text-align: center;
-    line-height: 1rem;
+    line-height: 0.8rem;
     margin-left: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -1127,7 +1127,7 @@ a {
     color: #999;
     line-height: 0.4rem;
     margin: 0 auto 0 0.5rem;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
@@ -1154,7 +1154,7 @@ a {
     color: #ec5413;
     line-height: 0.4rem;
     margin-left: 0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
@@ -1182,7 +1182,7 @@ a {
 
 .personal-title-lik {
     width: 100%;
-    height: auto;
+    height: 0.8rem;
     padding: 0.15rem 0 0.15rem 0;
     border-bottom: 0.5px #d7d5d5 solid;
 }
@@ -1191,7 +1191,7 @@ a {
     width: 30%;
     float: left;
     color: #999;
-    line-height: 0.4rem;
+    line-height: 0.5rem;
     margin-left: 0.5rem;
     font-size: 0.32rem;
     letter-spacing: 0.01rem;
@@ -1205,7 +1205,7 @@ a {
 
     line-height: 0.5rem;
     margin-left: 0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     border: none;
@@ -1220,7 +1220,7 @@ a {
     background: #fff;
     line-height: 0.5rem;
     margin-left: 0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     border: none;
@@ -1232,10 +1232,9 @@ a {
     width: 50%;
     float: left;
     text-align: right;
-
     line-height: 0.5rem;
     margin-left: 0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.23rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     border: none;
@@ -1253,6 +1252,7 @@ a {
 
 .bot-personal {
     border-bottom: 6px #d7d5d5 solid !important;
+    height: 1rem !important;
 }
 
 .personal-head {
@@ -1315,7 +1315,7 @@ a {
     color: #999;
     line-height: 0.5rem;
     margin-left: 0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
@@ -1400,7 +1400,7 @@ a {
     line-height: 0.5rem;
     border: none;
     color: #999;
-    font: 0.2rem Arial;
+    font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
     background: #fff;
@@ -1412,7 +1412,7 @@ a {
     line-height: 0.5rem;
     border: none;
     color: #999;
-    font: 0.2rem Arial;
+    font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
     background: #fff;
@@ -1424,7 +1424,7 @@ a {
     line-height: 0.4rem;
     border: none;
     color: #999;
-    font: 0.2rem Arial;
+    font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
     letter-spacing: 0.01rem;
@@ -1555,11 +1555,11 @@ a {
 
 .demo4 {
     width: 93%;
-    height: 0.4rem;
-    line-height: 0.4rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
     border: none;
     color: #999;
-    font: 0.2rem Arial;
+    font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
     letter-spacing: 0.01rem;
@@ -1568,11 +1568,11 @@ a {
 
 .demo5 {
     width: 93%;
-    height: 0.4rem;
-    line-height: 0.4rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
     border: none;
     color: #999;
-    font: 0.2rem Arial;
+    font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
     letter-spacing: 0.01rem;
