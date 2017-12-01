@@ -65,9 +65,8 @@
                 $(this).addClass("lnj-optional-main-left-on"); //加绿色
                 $(this).siblings().removeClass();
             });
-            $('.lnj-optional-main-right dl dt').on('click', '.groom-chose', function () {
-                $(this).toggleClass("chose-on");
-
+            $('.lnj-optional-main-right').on('click', '.lnj-optional-main-right dl dt', function () {
+                $(this).find('div[class^="groom-chose"]').toggleClass("chose-on");
             });
 //						$(".groom-chose").click(function() {
 //							$(this).toggleClass("chose-on");

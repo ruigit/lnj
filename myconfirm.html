@@ -21,7 +21,10 @@
         })
         //		背景高度
         $(document).ready(function () {
-            if ($(window).height() > $(".myconfirm-content").height()) {
+            var headd = $(".inform-header").height();
+            var myconf = $(".myconfirm-content").height();
+            var nude = headd + myconf;
+            if ($(window).height() > nude) {
                 var winHeight = $(window).height();
                 $(".myconfirm-content").css({height: winHeight});
             }
