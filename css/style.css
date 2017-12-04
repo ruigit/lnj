@@ -564,8 +564,8 @@ a {
 
 .lnj-recommend dl dt img {
     float: left;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: middle;
@@ -574,7 +574,7 @@ a {
 
 .lnj-recommend-right {
     float: left;
-    width: 68%;
+    width: 61%;
     margin-left: 1%;
     padding: 0.2rem;
 }
@@ -595,10 +595,10 @@ a {
 .lnj-recommend-right p {
     width: auto;
     height: auto;
-    font-size: 0.23rem;
+    font-size: 0.25rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     color: #333;
-    line-height: 0.3rem;
+    line-height: 0.4rem;
     margin-top: 0.2rem;
 }
 
@@ -1024,7 +1024,7 @@ a {
     width: 74%;
     line-height: 0.4rem;
     margin-left: 4%;
-    font-size: 0.23rem;
+    font-size: 0.25rem;
     letter-spacing: 0.01rem;
     padding-top: 0.1rem;
 }
@@ -1127,7 +1127,7 @@ a {
     color: #999;
     line-height: 0.4rem;
     margin: 0 auto 0 0.5rem;
-    font-size: 0.23rem;
+    font-size: 0.25rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
@@ -1202,10 +1202,9 @@ a {
     width: 50%;
     float: left;
     text-align: right;
-
     line-height: 0.5rem;
     margin-left: 0.4rem;
-    font-size: 0.23rem;
+    font-size: 0.25rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     border: none;
@@ -1220,7 +1219,7 @@ a {
     background: #fff;
     line-height: 0.5rem;
     margin-left: 0.4rem;
-    font-size: 0.23rem;
+    font-size: 0.25rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     border: none;
@@ -1234,12 +1233,12 @@ a {
     text-align: right;
     line-height: 0.5rem;
     margin-left: 0.4rem;
-    font-size: 0.23rem;
+    font-size: 0.25rem;
     letter-spacing: 0.01rem;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
     border: none;
     color: #999;
-
+    padding: 0;
 }
 
 .addspan {
@@ -1292,7 +1291,7 @@ a {
 
 .delivery-title-lik {
     width: 100%;
-    height: auto;
+    height: 0.8rem;
     padding: 0.15rem 0 0.15rem 0;
     border-bottom: 0.5px #d7d5d5 solid;
 }
@@ -1317,11 +1316,13 @@ a {
     margin-left: 0.4rem;
     font-size: 0.25rem;
     letter-spacing: 0.01rem;
+    display: block;
     font-family: "Microsoft Yahei", "微软雅黑", Arial, "sans-serif";
 }
 
 .bot-delivery {
     border-bottom: 6px #d7d5d5 solid !important;
+    height: auto !important;
 }
 
 .delivery-title-time {
@@ -1387,7 +1388,7 @@ a {
 .icon-xiala {
     color: #61d2a7 !important;
     font-size: 0.3rem !important;
-    padding-top: 0.2rem;
+    padding-top: 0.25rem;
 }
 
 .xiala-right {
@@ -1395,7 +1396,7 @@ a {
 }
 
 .demo1 {
-    width: 80%;
+    width: 100%;
     height: 0.5rem;
     line-height: 0.5rem;
     border: none;
@@ -1403,11 +1404,12 @@ a {
     font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
-    background: #fff;
+    background: #fff url(../img/xiasanj.png) no-repeat 98% center;
+    padding: 0 0.55rem 0 0;
 }
 
 .demo6 {
-    width: 80%;
+    width: 100%;
     height: 0.5rem;
     line-height: 0.5rem;
     border: none;
@@ -1415,7 +1417,8 @@ a {
     font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
-    background: #fff;
+    background: #fff url(../img/xiasanj.png) no-repeat 98% center;
+    padding: 0 0.55rem 0 0;
 }
 
 .demo2 {
@@ -1548,35 +1551,37 @@ a {
 .delivery-school-address {
     width: 90%;
     margin: 0 auto;
-    height: auto;
+    height: 0.8rem;
     padding: 0.05rem 0 0.05rem 0;
     border-bottom: 0.5px #d7d5d5 solid;
 }
 
 .demo4 {
-    width: 93%;
-    height: 0.5rem;
-    line-height: 0.5rem;
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
     border: none;
     color: #999;
     font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
     letter-spacing: 0.01rem;
-    background: #fff;
+    background: #fff url("../img/xiasanj.png") no-repeat 98% center;
+    padding: 0 0.55rem 0 0;
 }
 
 .demo5 {
-    width: 93%;
-    height: 0.5rem;
-    line-height: 0.5rem;
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
     border: none;
     color: #999;
     font: 0.25rem Arial;
     font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
     text-align: right;
     letter-spacing: 0.01rem;
-    background: #fff;
+    background: #fff url("../img/xiasanj.png") no-repeat 98% center;
+    padding: 0 0.55rem 0 0;
 }
 
 /*配送信息end*/

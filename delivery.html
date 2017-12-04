@@ -51,8 +51,9 @@
             $(".history_finish").click(function () {
                 $(".de-school-history").hide();
                 $(".historyDate").hide();
-//                使用历史记录就隐藏点击弹出框,清空input值
-                $("#demo4, #demo5").hide();
+//                使用历史记录就禁止点击事件,清空input值
+//                $("#demo4, #demo5").hide();
+                $('#demo4, #demo5').attr('disabled', "true");//添加disabled属性，禁止点击事件
                 $("#demo4, #demo5").attr("value", "");
             });
             $(".delivery-title-chose ul li").click(function () {
@@ -124,13 +125,13 @@
         <div class="delivery-school-address">
             <input id="demo4" type="button" name="input_address" class="demo4"/>
             <input id="value1" type="hidden">
-            <i class="iconfont icon-xiala xiala-right"></i>
+            <!--<i class="iconfont icon-xiala xiala-right"></i>-->
             <div class="clear"></div>
         </div>
         <div class="delivery-school-address" style="margin-bottom: 0.1rem;">
             <input id="demo5" type="button" name="input_address" class="demo5"/>
             <input id="value2" type="hidden">
-            <i class="iconfont icon-xiala xiala-right"></i>
+            <!--<i class="iconfont icon-xiala xiala-right"></i>-->
             <div class="clear"></div>
         </div>
     </div>
@@ -170,7 +171,7 @@
         <span>
              <input class="demo1" id="demo1" type="button" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
                     value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
-            <i class="iconfont icon-xiala"></i></span>
+            <!--<i class="iconfont icon-xiala"></i>--></span>
         <div class="clear"></div>
     </div>
     <div class="delivery-title-lik">
@@ -178,7 +179,7 @@
         <span>
              <input class="demo6" id="demo6" type="button" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
                     value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
-            <i class="iconfont icon-xiala"></i></span>
+            <!--<i class="iconfont icon-xiala"></i>--></span>
         <div class="clear"></div>
     </div>
     <div class="delivery-title-lik bot-delivery">

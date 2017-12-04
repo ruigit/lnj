@@ -19,9 +19,9 @@
     color: #363837;
     margin: 0;
     height: auto;
-    width: 80%;
+    width: 95%;
     position: absolute;
-    left: 10%;
+    left: 2.5%;
     top: 30%;
     z-index: 9901;
     overflow: hidden;
@@ -62,7 +62,7 @@
 
 .area_roll > div {
     font-size: 1.9em;
-    height: 6em;
+    height: 10em;
     float: left;
     background-color: transparent;
     position: relative;
@@ -86,7 +86,7 @@
 }
 .area_grid {
     position: relative;
-    top: 2em;
+    top: 4em;
     width: 60%;
     height: 2em;
     margin: 0 auto;
@@ -128,7 +128,7 @@
     position: absolute;
     z-index: 9902;
     width: 5.5em;
-    margin-top: 2em
+    margin-top: 4em
 }
 
 .area_roll > div .gear {
