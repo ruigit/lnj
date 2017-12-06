@@ -19,6 +19,7 @@
     <!--时间选择-->
     <link rel="stylesheet" href="css/lCalendar.css"/>
     <script type="text/javascript" src="js/lCalendar.min.js"></script>
+
     <script>
         //			阻止穿透事件
         $(function () {
@@ -73,6 +74,11 @@
             qcalendar.init({
                 'trigger': '#demo6',
                 'type': 'date'
+            });
+            var qcalendar7 = new lCalendar();
+            qcalendar7.init({
+                'trigger': '#demo7',
+                'type': 'ym'
             });
         })
         //		地址选择
@@ -178,6 +184,14 @@
         <p>配送日期</p>
         <span>
              <input class="demo6" id="demo6" type="button" name="input_date" data-lcalendar="1900-01-1,2089-12-31"
+                    value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
+            <!--<i class="iconfont icon-xiala"></i>--></span>
+        <div class="clear"></div>
+    </div>
+    <div class="delivery-title-lik">
+        <p>年月</p>
+        <span>
+             <input class="demo7" id="demo7" type="button" name="input_date" data-lcalendar="1900-01,2089-12"
                     value="确定后不可更改" onfocus="this.value=''" onblur="if(this.value==''){this.value='确定后不可更改'}"/>
             <!--<i class="iconfont icon-xiala"></i>--></span>
         <div class="clear"></div>

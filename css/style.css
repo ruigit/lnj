@@ -1420,6 +1420,18 @@ a {
     padding: 0 0.55rem 0 0;
 }
 
+.demo7 {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border: none;
+    color: #999;
+    font: 0.25rem Arial;
+    font-family: "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
+    text-align: right;
+    background: #fff url(../img/xiasanj.png) no-repeat 98% center;
+    padding: 0 0.55rem 0 0;
+}
 .demo2 {
     width: 80%;
     height: 0.4rem;
@@ -1732,6 +1744,113 @@ input::-webkit-input-placeholder {
 }
 
 /*班级订餐列表end*/
+.service-main {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+.client-center {
+    width: 100%;
+    height: auto;
+    padding: 0.3rem 0;
+}
+
+.service-title-main {
+    width: 90%;
+    height: auto;
+    margin: 0.3rem auto 0 auto;
+    text-indent: 0.3rem;
+    color: #333;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px #d7d5d5 dashed;
+}
+
+.client-center span {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.3rem;
+    display: block;
+    line-height: 0.5rem;
+    color: #333;
+}
+
+.client-center p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.3rem;
+    text-indent: 0.8rem;
+    line-height: 0.5rem;
+    color: #333;
+}
+
+.weixin {
+    width: auto;
+    margin: 0 auto;
+    font-size: 0.3rem;
+    text-indent: 3.5rem;
+    line-height: 0.5rem;
+    color: #333;
+    text-align: left;
+}
+
+.erwei {
+    width: auto;
+    margin: 0 auto;
+    font-size: 0.3rem;
+    padding-right: 2.8rem;
+    line-height: 0.5rem;
+    color: #333;
+    text-align: right;
+}
+
+.client-center img {
+    width: 2.5rem;
+    height: 2.5rem;
+    float: right;
+    margin-right: 0.3rem;
+}
+
+.service-custom {
+    width: 0.7rem;
+    height: auto;
+    line-height: 0.4rem;
+    padding: 0.2rem 0 0.2rem 0.2rem;
+    font-size: 0.3rem;
+    color: #333;
+
+    border: 1px #d7d5d5 solid;
+    /*border-left: none;*/
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+}
+
+/*服务页面end*/
+.abstract-title-main {
+    width: 90%;
+    height: auto;
+    margin: 0.3rem auto 0 auto;
+    padding-bottom: 0.3rem;
+
+}
+
+.abstract-title-main p {
+    text-indent: 0.3rem;
+    color: #333;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+}
+
+.abstract-title-main img {
+    width: 70%;
+    height: 3rem;
+    margin: 0.3rem 15%;
+}
+
+/*简介页面end*/
 /*padpro横屏*/
 
 @media only screen and (min-width: 1366px) {

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>良农集学生有机餐</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script>
+        //			阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        })
+        $(document).ready(function () {
+            var winHeight = $(window).height();
+            if ($(window).height() > $(".service-main").height()) {
+
+                $(".service-main").css({
+                    height: winHeight
+                });
+            } else {
+                $(".inform-title").css({
+                    height: winHeight
+                });
+            }
+        })
+    </script>
+</head>
+<body>
+<div class="service-main">
+    <div class="inform-header">
+        <div class="backpage-inform">
+            <i class="iconfont icon-xiaoyuhao iconsinform"></i>
+        </div>
+        <div class="title-inform">服务内容</div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="inform-title">
+        <div class="inform-title-top">
+            <p>购买须知</p>
+        </div>
+        <div class="service-title-main">
+            沈阳良农集饮食企业策划有限公司（简称“良农集”）始建于2010年，是沈阳最早从事有机食品行业的企业之一，致力于打造“从田间到舌尖”的全产业链有机食品生产体系。良农集一期计划，预投资3.6亿（2015年-2020年）在葫芦岛、法库、黑龙江五常投资建立生态产业基地。二期计划，预投资6.5亿（2020年-2025年）打造东北黑土地优质农品交易中心。
+        </div>
+        <div class="client-center">
+            <span>客服中心：</span>
+            <p>（1）客服电话：400 827 0655</p>
+            <p>（2）客服微信：LNJ4008270655</p>
+            <div class="weixin">15041205508</div>
+            <div class="erwei">二维码：</div>
+            <img src="img/erweima.png"/>
+            <div class="clearfix"></div>
+        </div>
+        <div class="service-custom">在线客服</div>
+    </div>
+</div>
+</body>
+</html>
