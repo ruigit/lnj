@@ -766,10 +766,16 @@ a {
 .lnj-optional-groom {
     float: left;
     width: 3rem;
-    height: 1.6rem;
-    margin: 0.2rem 0 0.2rem 0.1rem;
+    height: 1rem;
+    margin: 0.1rem 0 0.2rem 0.1rem;
 }
 
+.dhti {
+    float: left;
+    width: 3rem;
+    text-indent: 0.1rem;
+    margin-top: 0.15rem;
+}
 .groom-title {
     height: 0.6rem;
     line-height: 0.6rem;
@@ -816,7 +822,7 @@ a {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 2px #aaaaaa solid;
-    margin: 13% 0 0 0;
+    margin: 2% 0 0 0;
 }
 
 .chose-on {
