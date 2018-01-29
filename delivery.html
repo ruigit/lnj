@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/rem.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/mock.js"></script>
     <!--地址选择-->
     <link rel="stylesheet" href="css/lArea.css"/>
     <script type="text/javascript" src="js/lArea.js"></script>
@@ -26,6 +27,187 @@
             new
             FastClick(document.body);
         })
+
+        Mock.mock('http://www.bai.com', {
+                "data": [
+                    {
+                        "id": "2",
+                        "name": "一级",
+                        "child": [
+                            {
+                                "id": "21",
+                                "name": "二级1",
+                                "child": [
+                                    {
+                                        "id": "211",
+                                        "name": "三级11"
+                                    },
+                                    {
+                                        "id": "212",
+                                        "name": "三级12"
+                                    },
+                                    {
+                                        "id": "213",
+                                        "name": "三级13"
+                                    },
+                                    {
+                                        "id": "214",
+                                        "name": "三级14"
+                                    },
+                                    {
+                                        "id": "215",
+                                        "name": "三级15"
+                                    },
+                                    {
+                                        "id": "216",
+                                        "name": "三级16"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "22",
+                                "name": "二级2"
+                            },
+                            {
+                                "id": "23",
+                                "name": "二级3"
+                            },
+                            {
+                                "id": "24",
+                                "name": "二级4"
+                            },
+                            {
+                                "id": "25",
+                                "name": "二级5"
+                            },
+                            {
+                                "id": "26",
+                                "name": "二级6"
+                            },
+                            {
+                                "id": "27",
+                                "name": "二级7",
+                                "child": [
+                                    {
+                                        "id": "271",
+                                        "name": "三级71"
+                                    },
+                                    {
+                                        "id": "272",
+                                        "name": "三级72"
+                                    },
+                                    {
+                                        "id": "273",
+                                        "name": "三级73"
+                                    },
+                                    {
+                                        "id": "274",
+                                        "name": "三级74"
+                                    },
+                                    {
+                                        "id": "275",
+                                        "name": "三级75"
+                                    },
+                                    {
+                                        "id": "276",
+                                        "name": "三级76"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "28",
+                                "name": "二级8",
+                                "child": [
+                                    {
+                                        "id": "281",
+                                        "name": "三级81"
+                                    },
+                                    {
+                                        "id": "282",
+                                        "name": "三级82"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "name": "一级1",
+                        "child": [
+                            {
+                                "id": "31",
+                                "name": "二级11"
+                            },
+                            {
+                                "id": "32",
+                                "name": "二级21"
+                            },
+                            {
+                                "id": "33",
+                                "name": "二级31"
+                            },
+                            {
+                                "id": "34",
+                                "name": "二级41"
+                            },
+                            {
+                                "id": "35",
+                                "name": "二级51"
+                            },
+                            {
+                                "id": "36",
+                                "name": "二级61"
+                            },
+                            {
+                                "id": "37",
+                                "name": "二级71",
+                                "child": [
+                                    {
+                                        "id": "371",
+                                        "name": "三级711"
+                                    },
+                                    {
+                                        "id": "372",
+                                        "name": "三级721"
+                                    },
+                                    {
+                                        "id": "373",
+                                        "name": "三级731"
+                                    },
+                                    {
+                                        "id": "374",
+                                        "name": "三级741"
+                                    },
+                                    {
+                                        "id": "375",
+                                        "name": "三级751"
+                                    },
+                                    {
+                                        "id": "376",
+                                        "name": "三级761"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "38",
+                                "name": "二级81",
+                                "child": [
+                                    {
+                                        "id": "381",
+                                        "name": "三级811"
+                                    },
+                                    {
+                                        "id": "382",
+                                        "name": "三级821"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        )
+
 
         //		背景高度
         $(document).ready(function () {
@@ -83,6 +265,27 @@
         })
         //		地址选择
         $(function () {
+//            $("#demo4").click(function(){
+//                $.ajax({
+//                    type: "post",
+//                    url: "http://www.bai.com",
+//                    dataType: "json",
+//                    success: function (msg) {
+//
+//                        var area = new LArea();
+//                        area.init({
+//                            'trigger': '#demo4',
+//                            'valueTo': '#value1', //选择完毕后id属性输出到该位置
+//                            'keys': {
+//                                id: 'id',
+//                                name: 'name'
+//                            },
+//                            'data': msg
+//                        });
+//                    }
+//                })
+//            })
+
             var area = new LArea();
             area.init({
                 'trigger': '#demo4',
@@ -91,9 +294,8 @@
                     id: 'id',
                     name: 'name'
                 },
-                'data': 'js/AreaData.json'
+                'data': 'http://www.bai.com'
             });
-
             var qrea = new LArea();
             qrea.init({
                 'trigger': '#demo5',

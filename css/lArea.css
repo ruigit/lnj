@@ -147,3 +147,7 @@
     font-weight: normal;
 }
 
+/*安卓机部分机型不能滑动的bug*/
+* {
+    touch-action: none;
+}

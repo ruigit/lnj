@@ -75,6 +75,10 @@ window.LArea = (function () {
                 area_province.addEventListener('touchend', gearTouchEnd);
                 area_city.addEventListener('touchend', gearTouchEnd);
                 area_county.addEventListener('touchend', gearTouchEnd);
+                // 安卓机部分机型不能滑动的bug
+                document.addEventListener("touchmove", function (e) {
+                    e.preventDefault();
+                });
             }
 
             //初始化插件默认值
@@ -197,8 +201,8 @@ window.LArea = (function () {
                         setDuration();
                     }
                     if (stopGear) {
-                        // var gearVal = Math.abs(pos) / 2 || 0 ;
-                        var gearVal = Math.abs(pos) / 2;
+                        var gearVal = Math.abs(pos) / 2 || 0;
+                        // var gearVal = Math.abs(pos) / 2;
                         setGear(target, gearVal);
                         clearInterval(target["int_" + target.id]);
                     }
